@@ -4,6 +4,7 @@ import BlueButton from "./BlueButton";
 import { useState } from "react";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import logo1 from "/public/logo.png";
 
 const scrollVariants = {
   hidden: { opacity: 0, y: 60 },
@@ -26,7 +27,7 @@ export default function NavBar() {
       transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
       className="p-6 flex flex-row gap-8 place-items-center relative lg:w-[95%] mx-auto"
     >
-      <img src="/public/logo.png" width="100" alt="logo"></img>
+      <img src={logo1} width="100" alt="logo"></img>
       <ul className="p-2 sm:flex sm:flex-row gap-6 place-items-center ml-auto hidden text-gray-300">
         <li>
           <a href="">Residencies</a>
