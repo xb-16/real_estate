@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import React from "react";
 import { motion } from "framer-motion";
+import contactImg from "/public/contact.png";
 
 const contactInfo = [
   {
@@ -82,7 +83,7 @@ export default function Contact() {
         className="md:w-[40%] flex justify-center items-center place-items-center"
       >
         <img
-          src="/public/contact.jpg"
+          src={contactImg}
           alt=""
           className="rounded-t-[100%] h-[400px] md:h-full max-h-[500px] object-cover"
         />

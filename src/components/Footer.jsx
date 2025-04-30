@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import logo2 from "/public/logo2.png";
 
 let contactInfo = ["Property", "Services", "Product", "About Us"];
 export default function Footer() {
@@ -32,7 +33,7 @@ export default function Footer() {
           className="md:w-[20%] space-y-3"
         >
           <img
-            src="/public/logo2.png"
+            src={logo2}
             width="140"
             alt="logo"
             className="max-md:mx-auto"

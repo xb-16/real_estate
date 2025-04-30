@@ -1,11 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
+import equinix from "/public/equinix.png";
+import tower from "/public/tower.png";
+import prologis from "/public/prologis.png";
+import realty from "/public/realty.png";
 export default function Brands() {
   let imgs = [
-    "/public/equinix.png",
-    "/public/tower.png",
-    "/public/prologis.png",
-    "/public/realty.png",
+    equinix,
+    tower,
+    prologis,
+    realty,
   ];
   return (
     <section className="flex justify-between place-items-center flex-wrap mt-4 mx-auto w-[85%] lg:w-[95%] p-1 space-y-3 py-2">

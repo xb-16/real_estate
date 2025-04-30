@@ -2,6 +2,7 @@ import React from "react";
 import { Accordion, AccordionItem } from "@heroui/accordion";
 import { TrophyIcon } from "lucide-react";
 import { motion } from "framer-motion";
+import valueImg from "/public/value.png";
 function MoneyIcon() {
   return (
     <svg
@@ -53,7 +54,7 @@ export default function OurValue() {
         className="md:w-[40%] flex justify-center place-items-center"
       >
         <img
-          src="/public/value.png"
+          src={valueImg}
           alt=""
           width=""
           className="border-gray-400 border-8 rounded-t-[100%]"
