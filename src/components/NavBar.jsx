@@ -4,7 +4,7 @@ import BlueButton from "./BlueButton";
 import { useState } from "react";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import logo1 from "/public/logo.png";
+import logo1 from "../../public/logo.png";
 
 const scrollVariants = {
   hidden: { opacity: 0, y: 60 },
