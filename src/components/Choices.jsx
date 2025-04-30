@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import r1 from "/public/r1.png";
-import r2 from "/public/r2.png";
-import r3 from "/public/r3.png";
+import r1 from "/r1.png";
+import r2 from "/r2.png";
+import r3 from "/r3.png";
 
 let choicesSlider = [
   {
@@ -69,11 +69,12 @@ export default function Choices() {
 
   return (
     <motion.section
-    initial={{ opacity : 0, scale : .8}}
-    whileInView={{ opacity : 1, scale : 1}}
-    viewport={{once : true}}
-    transition={{duration : 1, ease : "easeIn"}}
-    className="mx-auto mt-10 w-[85%] lg:w-[95%]">
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1, ease: "easeIn" }}
+      className="mx-auto mt-10 w-[85%] lg:w-[95%]"
+    >
       <div className="flex justify-between space-y-6">
         <div>
           <h4 className="text-2xl font-medium text-orange-600">Best Choices</h4>
@@ -101,7 +102,7 @@ export default function Choices() {
         className="overflow-hidden scroll-smooth"
         style={{ scrollBehavior: "smooth" }}
       >
-        <div className="flex gap-[1%] md:gap-[2%] lg:w-[150%] w-[600%] md:w-[200%]">
+        <div className="flex gap-[1%] md:gap-[2%] lg:w-[150%] w-[600%] md:w-[200%] p-2">
           {choicesSlider.map((ch, index) => {
             return (
               <div

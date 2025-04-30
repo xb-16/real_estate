@@ -4,7 +4,7 @@ import { MapPin } from "lucide-react";
 import BlueButton from "./BlueButton";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import heroImage from "/public/hero-image.png";
+import heroImage from "/hero-image.png";
 
 const dataFeatures = [
   { value: 9000, label: "Premium Product" },

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import logo2 from "/public/logo2.png";
+import logo2 from "/logo2.png";
 
 let contactInfo = ["Property", "Services", "Product", "About Us"];
 export default function Footer() {
