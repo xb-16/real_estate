@@ -46,12 +46,14 @@ let choicesSlider = [
 ];
 
 export default function Choices() {
-  const sliderRef = useRef(null); 
+  const sliderRef = useRef(null);
 
   const scrollTo = (direction) => {
     if (sliderRef.current) {
       const container = sliderRef.current;
-      const scrollAmount = container.offsetWidth * 0.25;
+      // i want to convert vh to px
+      const scrollAmount = Math.max(container.offsetWidth * 0.25, 300);
+      console.log(container.offsetWidth);
 
       if (direction === "next") {
         container.scrollLeft += scrollAmount;
@@ -62,7 +64,7 @@ export default function Choices() {
   };
 
   return (
-    <section className="container max-md:px-4 m-auto mt-10">
+    <section className="mx-auto mt-10 w-[85%] lg:w-[95%]">
       <div className="flex justify-between space-y-6">
         <div>
           <h4 className="text-2xl font-medium text-orange-600">Best Choices</h4>
@@ -87,10 +89,10 @@ export default function Choices() {
       </div>
       <div
         ref={sliderRef}
-        className="overflow-hidden p-3 scroll-smooth"
+        className="overflow-hidden scroll-smooth"
         style={{ scrollBehavior: "smooth" }}
       >
-        <div className="flex gap-[2%] w-[150%] max-md:w-[350%] max-lg:w-[200%]">
+        <div className="flex gap-[1%] md:gap-[2%] lg:w-[150%] w-[600%] md:w-[200%]">
           {choicesSlider.map((ch, index) => {
             return (
               <div

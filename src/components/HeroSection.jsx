@@ -60,7 +60,7 @@ export default function HeroSection() {
       <div className="relative">
         <NavBar />
         <div className="absolute w-[20rem] h-[20rem] bg-[rgba(255,255,255,.522)] top-0 left-0 rounded-[100%] z-1 blur-[100px]"></div>
-        <div className="md:pt-8 flex flex-col md:flex-row justify-between m-auto md:w-[80%]">
+        <div className="md:pt-8 flex flex-col md:flex-row justify-between m-auto w-[90%] p-2">
           <div className="md:w-[45%] space-y-10 md:mt-10 max-md:text-center max-md:flex max-md:flex-col max-md:place-items-center max-md:mt-12">
             <h1 className="text-6xl font-bold relative z-1 w-fit text-white">
               <div className=" h-[4rem] w-[4rem] bg-orange-500 rounded-[100%] absolute right-[28%] top-[-10%] -z-1"></div>
@@ -97,7 +97,7 @@ export default function HeroSection() {
               ))}
             </div>
           </div>
-          <div className="md:w-[45%] flex justify-center max-md:mt-12 max-md:h-[80vh] ">
+          <div className="md:w-[50%] lg:w-[50%] flex justify-center max-md:mt-12 max-md:pb-4">
             <img
               src="/public/hero-image.png"
               alt=""

@@ -41,9 +41,10 @@ function CheckIcon() {
 
 let defaultContent =
   "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.";
+
 export default function OurValue() {
   return (
-    <section className="container m-auto mt-20 md:flex justify-between">
+    <section className="m-auto mt-20 md:flex space-y-8 text-center justify-between w-[80%] lg:w-[95%]">
       <div className="md:w-[40%] flex justify-center min-h-[400px]">
         <img
           src="/public/value.png"
@@ -66,8 +67,7 @@ export default function OurValue() {
           itemClasses={{
             base: " border-1 border-slate-300 shadow-lg",
             title: "font-bold text-blue-800",
-            trigger:
-              "rounded-lg h-14 flex justify-between items-center",
+            trigger: "rounded-lg h-14 flex justify-between items-center",
             content: "p-6 text-slate-600",
             indicator: "p-3",
           }}
