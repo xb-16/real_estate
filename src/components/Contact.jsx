@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 import React from "react";
 import { motion } from "framer-motion";
-import contactImg from "/public/contact.png";
+import contactImg from "/public/contact.jpg";
 
 const contactInfo = [
   {
