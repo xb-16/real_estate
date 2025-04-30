@@ -5,6 +5,7 @@ import {
   MessageSquareMore,
 } from "lucide-react";
 import React from "react";
+import { motion } from "framer-motion";
 
 const contactInfo = [
   {
@@ -35,8 +36,14 @@ const contactInfo = [
 
 export default function Contact() {
   return (
-    <section className="m-auto mt-20 md:flex justify-between w-[80%] lg:w-[95%] space-y-4">
-      <div className="md:w-[47%] space-y-3">
+    <section className="m-auto mt-20 md:flex justify-between w-[85%] lg:w-[95%] space-y-4">
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="md:w-[50%] space-y-3"
+      >
         <h2 className="text-orange-500 text-2xl font-bold">Our Value</h2>
         <h3 className="text-blue-700 text-4xl font-bold">
           Value We Give to You
@@ -45,7 +52,7 @@ export default function Contact() {
           We always ready to help by providijng the best services for you. We
           beleive a good blace to live can make your life better
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:w-[85%] ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-6 lg:w-[85%]">
           {contactInfo.map((contact, index) => {
             return (
               <div
@@ -66,14 +73,20 @@ export default function Contact() {
             );
           })}
         </div>
-      </div>
-      <div className="md:w-[40%] h-[400px] flex justify-center">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="md:w-[40%] flex justify-center items-center place-items-center"
+      >
         <img
           src="/public/contact.jpg"
           alt=""
-          className="rounded-t-[100%] w-full h-full"
+          className="rounded-t-[100%] h-[400px] md:h-full max-h-[500px] object-cover"
         />
-      </div>
+      </motion.div>
     </section>
   );
 }

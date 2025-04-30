@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
 
 let choicesSlider = [
   {
@@ -64,7 +65,12 @@ export default function Choices() {
   };
 
   return (
-    <section className="mx-auto mt-10 w-[85%] lg:w-[95%]">
+    <motion.section
+    initial={{ opacity : 0, scale : .8}}
+    whileInView={{ opacity : 1, scale : 1}}
+    viewport={{once : true}}
+    transition={{duration : 1, ease : "easeIn"}}
+    className="mx-auto mt-10 w-[85%] lg:w-[95%]">
       <div className="flex justify-between space-y-6">
         <div>
           <h4 className="text-2xl font-medium text-orange-600">Best Choices</h4>
@@ -114,6 +120,6 @@ export default function Choices() {
           })}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import { MapPin } from "lucide-react";
 import BlueButton from "./BlueButton";
 import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 
 const dataFeatures = [
   { value: 9000, label: "Premium Product" },
@@ -61,7 +62,12 @@ export default function HeroSection() {
         <NavBar />
         <div className="absolute w-[20rem] h-[20rem] bg-[rgba(255,255,255,.522)] top-0 left-0 rounded-[100%] z-1 blur-[100px]"></div>
         <div className="md:pt-8 flex flex-col md:flex-row justify-between m-auto w-[90%] p-2">
-          <div className="md:w-[45%] space-y-10 md:mt-10 max-md:text-center max-md:flex max-md:flex-col max-md:place-items-center max-md:mt-12">
+          <motion.div
+            initial={{ opacity: 0, x: -70 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="md:w-[45%] space-y-10 md:mt-10 max-md:text-center max-md:flex max-md:flex-col max-md:place-items-center max-md:mt-12"
+          >
             <h1 className="text-6xl font-bold relative z-1 w-fit text-white">
               <div className=" h-[4rem] w-[4rem] bg-orange-500 rounded-[100%] absolute right-[28%] top-[-10%] -z-1"></div>
               Discover
@@ -74,15 +80,8 @@ export default function HeroSection() {
             </p>
 
             <div className="bg-white p-3 gap-2 rounded-xl border-2 border-gray-400 flex w-[85%] place-items-center">
-              <MapPin
-                stroke="blue"
-                fill="white"
-                size={35}
-              />
-              <input
-                type="text"
-                className="w-[70%] h-full focus:outline-0"
-              />
+              <MapPin stroke="blue" fill="white" size={35} />
+              <input type="text" className="w-[70%] h-full focus:outline-0" />
               <BlueButton content="Search" className="" />
             </div>
             <div className="grid grid-cols-3 gap-2 md:max-lg:pb-4">
@@ -96,14 +95,19 @@ export default function HeroSection() {
                 </div>
               ))}
             </div>
-          </div>
-          <div className="md:w-[50%] lg:w-[50%] flex justify-center max-md:mt-12 max-md:pb-4">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="md:w-[50%] lg:w-[50%] flex justify-center max-md:mt-12 max-md:pb-4"
+          >
             <img
               src="/public/hero-image.png"
               alt=""
               className="border-slate-600 object-cover border-8 rounded-t-[100%] h-[90%]"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

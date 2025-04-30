@@ -1,7 +1,7 @@
 import React from "react";
 import { Accordion, AccordionItem } from "@heroui/accordion";
 import { TrophyIcon } from "lucide-react";
-
+import { motion } from "framer-motion";
 function MoneyIcon() {
   return (
     <svg
@@ -44,16 +44,28 @@ let defaultContent =
 
 export default function OurValue() {
   return (
-    <section className="m-auto mt-20 md:flex space-y-8 text-center justify-between w-[80%] lg:w-[95%]">
-      <div className="md:w-[40%] flex justify-center min-h-[400px]">
+    <section className="m-auto mt-20 md:flex space-y-8 text-center justify-between w-[85%] lg:w-[95%]">
+      <motion.div
+        initial={{ opacity: 0, x: -60 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="md:w-[40%] flex justify-center place-items-center"
+      >
         <img
           src="/public/value.png"
           alt=""
-          width="440"
-          className="border-gray-400 border-8 rounded-t-[100%] h-fit"
+          width=""
+          className="border-gray-400 border-8 rounded-t-[100%]"
         />
-      </div>
-      <div className="md:w-[47%] space-y-3">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 60 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "easeIn" }}
+        className="md:w-[47%] space-y-3"
+      >
         <h2 className="text-orange-500 text-2xl font-bold">Our Value</h2>
         <h3 className="text-blue-700 text-4xl font-bold">
           Value We Give to You
@@ -99,7 +111,7 @@ export default function OurValue() {
             {defaultContent}
           </AccordionItem>
         </Accordion>
-      </div>
+      </motion.div>
     </section>
   );
 }

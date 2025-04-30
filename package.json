@@ -13,7 +13,7 @@
     "@heroui/accordion": "^2.2.14",
     "@heroui/system": "^2.4.13",
     "@heroui/theme": "^2.4.13",
-    "framer-motion": "^12.6.3",
+    "framer-motion": "^12.9.2",
     "lucide-react": "^0.487.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

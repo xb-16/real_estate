@@ -3,7 +3,12 @@ import { ChartNoAxesGantt } from "lucide-react";
 import BlueButton from "./BlueButton";
 import { useState } from "react";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
+const scrollVariants = {
+  hidden: { opacity: 0, y: 60 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+};
 export default function NavBar() {
   let [open, setOpen] = useState(false);
   let [width, setWidth] = useState(window.innerWidth);
@@ -15,7 +20,12 @@ export default function NavBar() {
   }, []);
 
   return (
-    <nav className="p-6 flex flex-row gap-8 place-items-center relative lg:w-[95%] mx-auto">
+    <motion.nav
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+      className="p-6 flex flex-row gap-8 place-items-center relative lg:w-[95%] mx-auto"
+    >
       <img src="/public/logo.png" width="100" alt="logo"></img>
       <ul className="p-2 sm:flex sm:flex-row gap-6 place-items-center ml-auto hidden text-gray-300">
         <li>
@@ -54,7 +64,6 @@ export default function NavBar() {
           </li>
         </ul>
       )}
-    </nav>
+    </motion.nav>
   );
 }
-

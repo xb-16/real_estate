@@ -1,4 +1,4 @@
-import Brands from './components/brands'
+import Brands from './components/Brands'
 import Choices from './components/Choices'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
