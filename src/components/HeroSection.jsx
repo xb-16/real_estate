@@ -4,6 +4,7 @@ import { MapPin } from "lucide-react";
 import BlueButton from "./BlueButton";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import heroImage from "/public/hero-image.png";
 
 const dataFeatures = [
   { value: 9000, label: "Premium Product" },
@@ -103,7 +104,7 @@ export default function HeroSection() {
             className="md:w-[50%] lg:w-[50%] flex justify-center max-md:mt-12 max-md:pb-4"
           >
             <img
-              src="/public/hero-image.png"
+              src={heroImage}
               alt=""
               className="border-slate-600 object-cover border-8 rounded-t-[100%] h-[90%]"
             />
