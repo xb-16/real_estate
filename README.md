@@ -1,12 +1,30 @@
-# React + Vite
+# A Responsive Landing Page for Real Estate Using React + Tailwind  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
+<div align="center">
+  
+![Landing Page Demo](Thumbnail.png)
 
-Currently, two official plugins are available:
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Designing a Landing Page With the Newest Technologies for Real Estate Company to Showcase Their Services...and Deploy it to Vercel.
 
-## Expanding the ESLint configuration
+I followed a tutorial by **@ZAINKEEPSCODE** on YouTube:  
+[![YouTube Tutorial](https://img.shields.io/badge/YouTube-Watch%20Tutorial-red)](https://www.youtube.com/watch?v=edBx-fjgh4k)  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+During the project, I used:  
+- **[Lucide Icons](https://lucide.dev/guide/packages/lucide-react)** for the icons.  
+- [**Tailwind CSS**](https://tailwindcss.com/docs/installation/using-vite)  for responsive design, leveraging its utility classes to make the page fully responsive.
+- **[Framer Motion](https://motion.dev/docs/react-quick-start)** for Animation especially while scrolling on the page.
+- **[HeroUI](https://www.heroui.com/)** for some UI Components
+
+This was a great learning experience, Special thanks to **@ZAINKEEPSCODE** for the beautiful tutorial!  
+
+---
+
+### Follow Me:  
+
+- **HackerRank**: [![HackerRank](https://img.shields.io/badge/HackerRank-Profile-brightgreen)](https://www.hackerrank.com/profile/xbhackermrc)  
+- **CodePen**: [![CodePen](https://img.shields.io/badge/CodePen-Profile-blue)](https://codepen.io/Un_Kown)  
+
+---

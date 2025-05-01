@@ -62,6 +62,7 @@ export default function Footer() {
           </ul>
         </motion.div>
       </div>
+      <div className="mx-auto px-4 py-2 my-5 text-slate-300 font-medium text-lg bg-black w-fit">Developed By Ahmed ASSARI</div>
     </footer>
   );
 }
