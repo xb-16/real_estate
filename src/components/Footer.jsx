@@ -62,7 +62,7 @@ export default function Footer() {
           </ul>
         </motion.div>
       </div>
-      <div className="mx-auto px-4 py-2 my-5 text-slate-300 font-medium text-lg bg-black w-fit">Developed By <a href="https://github.com/xb-16" target="_blank" className="border-b-2 border-white pb-1">Ahmed ASSARI</a></div>
+      <div className="mx-auto px-4 py-2 my-5 text-slate-300 font-medium text-lg bg-black w-fit">Developed By <a href="https://github.com/xb-16" target="_blank" className="border-b-1 border-slate-300">Ahmed ASSARI</a></div>
     </footer>
   );
 }
